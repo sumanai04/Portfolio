@@ -19,6 +19,12 @@
       "description": "Web Blogspot based app made for Desa Panyingkiran with the purpose of detecting stunted growth from the most accessible device within your surroundings.",
       "tech": ["HTML", "Javascript"]
     },
+    "Receipt-Inator": {
+      "category": "sw",
+      "display_name": "Receipt-Inator",
+      "description": "Split restaurant bills from receipt photos — snap a pic, auto-extract items with DeepSeek Vision + Tesseract OCR, assign to friends, and see who owes what.",
+      "tech": ["Next.js", "Typescript", "Tailwind", "React"]
+    },
     "MobAppOTP": {
       "category": "sw",
       "display_name": "MobAppOTP",
