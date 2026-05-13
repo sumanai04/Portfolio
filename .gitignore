@@ -1,0 +1,8 @@
+# Claude-related files
+.claude/
+
+# Project config (personal)
+litellm_config.yaml
+
+# Task notes (local only)
+TASKMASTER.md

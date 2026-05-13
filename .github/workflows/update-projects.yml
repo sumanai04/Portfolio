@@ -1,0 +1,34 @@
+name: Update Projects
+
+on:
+  schedule:
+    # Runs daily at 07:13 UTC (off-peak, avoids :00/:30 congestion)
+    - cron: "13 7 * * *"
+  workflow_dispatch: {}  # manual trigger from GitHub UI
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run project updater
+        run: python update_projects.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-update project cards from GitHub repos"
+            git push
+          fi
