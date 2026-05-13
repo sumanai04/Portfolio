@@ -27,7 +27,7 @@ That's it — no cloning, no terminal. Do it from your phone if you want.
 | Trigger | What happens |
 |---------|-------------|
 | You push to `projects_config.json` | Action runs instantly, rebuilds project cards |
-| Daily at 07:13 UTC | Action fetches live repo data, refreshes descriptions |
+| Daily at 14:13 GMT+7 | Action fetches live repo data, refreshes descriptions |
 | Manual via Actions tab | Click "Run workflow" anytime |
 
 The Python script (`update_projects.py`) fetches repo metadata from the GitHub API and merges it with your curated config. Everything between `<!-- PROJECTS_START -->` and `<!-- PROJECTS_END -->` in `index.html` gets regenerated.
