@@ -5,6 +5,10 @@ on:
     # Runs daily at 07:13 UTC (off-peak, avoids :00/:30 congestion)
     - cron: "13 7 * * *"
   workflow_dispatch: {}  # manual trigger from GitHub UI
+  push:
+    branches: [main]
+    paths:
+      - "projects_config.json"  # instant rebuild when config is edited
 
 jobs:
   update:
