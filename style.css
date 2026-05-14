@@ -364,12 +364,14 @@ nav {
 
 .projects-scroll {
   position: relative;
-  max-height: 560px;
+  max-height: 640px;
   overflow-y: auto;
   overflow-x: hidden;
   padding-bottom: 0.5rem;
   scrollbar-width: thin;
   scrollbar-color: rgba(255,255,255,0.12) transparent;
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black calc(100% - 60px), transparent 100%);
+  mask-image: linear-gradient(to bottom, black 0%, black calc(100% - 60px), transparent 100%);
 }
 
 .projects-scroll::-webkit-scrollbar {
