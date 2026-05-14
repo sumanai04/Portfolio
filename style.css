@@ -141,7 +141,7 @@ nav {
 }
 
 .hero-inner {
-  max-width: 620px;
+  max-width: 720px;
   margin: 0 auto;
   text-align: center;
 }
@@ -157,11 +157,12 @@ nav {
 
 .hero-name {
   font-family: 'Syne', sans-serif;
-  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
   font-weight: 800;
-  line-height: 1.0;
-  letter-spacing: -0.03em;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
   margin-bottom: 1rem;
+  white-space: nowrap;
 }
 
 .hero-name em {
