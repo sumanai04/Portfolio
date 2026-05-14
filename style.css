@@ -142,6 +142,8 @@ nav {
 
 .hero-inner {
   max-width: 620px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero-eyebrow {
@@ -172,10 +174,7 @@ nav {
   font-size: 1.05rem;
   color: var(--text-secondary);
   line-height: 1.75;
-  max-width: 45ch;
   margin-bottom: 2rem;
-  text-align: justify;
-  text-justify: inter-word;
 }
 
 .hero-tags {
@@ -183,6 +182,7 @@ nav {
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 2.5rem;
+  justify-content: center;
 }
 
 .tag {
@@ -203,6 +203,7 @@ nav {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .btn {
