@@ -1,54 +1,48 @@
 # Portfolio Improvement Plan
 
-## 1. Expand the hero bio
-- Current: one short sentence that looks lost at 950px
-- Fix: add 1-2 more lines with specificity — what kind of problems, what scale, what you're looking for next
-- Example structure: "I build X that does Y. Recently I've been focused on Z. Currently looking for W opportunities."
+## Done
 
-## 2. Add project visuals
-- Each project card should have a thumbnail/screenshot
-- ML projects: show output examples (segmentation masks, confusion matrices, dashboard screenshots)
-- SW projects: show UI screenshots or architecture diagrams
-- Adds visual variety to break up the wall of identical glass cards
+- [x] **Fix typos** — `classifcating`, `capabilites`, `survivality`, `analyzed` all fixed
+- [x] **Expand hero bio** — Replaced vague one-liner with 3-line blurb (CS grad, ML/CV focus, end-to-end pipeline to deployment)
+- [x] **Add metrics to project descriptions** — Pulled real details from GitHub READMEs: DR Segmentation (hybrid loss, A100 GPU, AUPR/Dice/IoU), Hand Gesture (MediaPipe + TensorFlow, Creative Senz3D dataset with ~1,060 images, 11 gestures)
+- [x] **Differentiate project cards** — Top 4 projects get coral left accent border via `.project-card.featured`
+- [x] **Hobbies narrative hook** — Changed from "Little things I do here and there" to "Building things doesn't stop at the screen"
+- [x] **Added missing project** — WebAgenticStarterKit (dual-agent LiteLLM/DeepSeek/Ollama boilerplate) was in GitHub but not the portfolio
+- [x] **Added project visual** — DR Segmentation card now has a thumbnail (qualitative masks comparison from the repo)
+- [x] **Switched CV to LaTeX version** — Download link now points to `Fathi_CV_AI_Latex.pdf`
+- [x] **Performance fixes** — Removed backdrop-filter blur (GPU killer), resized background from 2.9MB to 237KB, optimized all thumbnails
 
-## 3. Differentiate project cards by impact
-- Add a subtle visual indicator for standout projects (slightly larger card, accent border, or "featured" badge)
-- Consider reordering: best 3 projects first, rest below
-- The Receipt-Inator (Next.js + OCR) is more impressive than StuntingApp (HTML blog) — they shouldn't look equal
+## Still to do
 
-## 4. Add metrics to project descriptions
-- Each description should answer: what did it achieve?
-- Examples: "achieved 94% IoU on DR fundus dataset", "handles X concurrent users", "trained on Y samples"
-- If there are no metrics, at least be specific about scale and tools
+### 1. Add more project thumbnails
+- DR Segmentation: done
+- Hand Gesture: could use a GIF or architecture diagram from the repo
+- Receipt-Inator: needs a UI screenshot
+- WebAgenticStarterKit: architecture flowchart is in the README — could embed it
+- Others: screenshots would help but only if they exist
 
-## 5. Fix typos in descriptions
-- `classifcating` → `classifying`
-- `capabilites` → `capabilities`
-- `survivality rate` → `survival rate`
-- `analyzed` → `analyze`
-- Review all project descriptions for grammar
-
-## 6. Merge or expand Data Viz section
+### 2. Merge or expand Data Viz section
 - One Power BI embed under "Data Visualizations" (plural) reads as incomplete
-- Option A: merge it into Projects as another card
-- Option B: add 2+ more dashboards or visualizations
+- Option A: merge it into Projects
+- Option B: add more dashboards
 
-## 7. Give the hobbies section a narrative hook
-- Instead of a random masonry grid, add a short line connecting hobbies to skills
-- Example: "Building things extends beyond code — here's some of what I make with my hands."
+### 3. Add project detail modals
+- Clicking a project card goes straight to GitHub. A detail modal with full README excerpt, screenshots, and tech breakdown would be more compelling. GitHub link can still be the final CTA.
 
-## 8. Add project detail pages or modals
-- Right now clicking a project card goes straight to GitHub
-- A detail view (modal or inline expand) with screenshots, tech breakdown, and results would be more compelling
-- GitHub link can still be the final CTA
+### 4. Update CV content
+- `Fathi_CV_AI_Latex.pdf` needs the `.tex` source file to edit
+- Once provided, can update with latest projects, skills, and roles
 
-## 9. Testimonials or recognition
-- If you have any — add a small section. Even a quote from a professor or teammate
-- If not, skip. Don't fabricate.
+### 5. Reorder projects
+- Currently: DR Segmentation, Hand Gesture, StuntingApp, Receipt-Inator, WebAgenticStarterKit, MobAppOTP, Boolean Retrieval, Genetic Algorithm, Disease Classification, Covid Dashboard, Redis Quiz
+- Better order: featured first (DR Segmentation, Hand Gesture, Receipt-Inator, WebAgenticStarterKit), then the rest by category
 
-## Priority order
-1. Typos (fast, high impact — shows attention to detail)
-2. Expand bio (fast, high impact — first thing people read)
-3. Project metrics/descriptions (medium effort, high impact)
-4. Project visuals (more effort, high impact)
-5. Everything else
+### 6. Consider removing or demoting weaker projects
+- StuntingApp (HTML + JS blog) sits next to WebAgenticStarterKit (Next.js + FastAPI + PostgreSQL + LiteLLM) — the contrast makes the portfolio look uneven
+- Option: hide weaker projects behind a "show more" toggle, or remove entirely
+
+### 7. Deduplicate CV files
+- `Fathi_CV_AI.pdf` (61.9 KB) and `Fathi_CV_AI_Latex.pdf` — only the LaTeX one is linked. The old one can be removed to avoid confusion.
+
+### 8. Add MusicClassifyDL
+- New repo found but README is empty. Worth adding only if there's content to describe.
