@@ -37,6 +37,8 @@ def build_card(repo_name: str, owner: str, meta: dict, gh_data: dict | None) -> 
     display = meta.get("display_name", repo_name)
     desc = meta.get("description", "")
     tech = meta.get("tech", [])
+    featured = meta.get("featured", False)
+    thumbnail = meta.get("thumbnail", "")
 
     # Prefer config description; fall back to GitHub description
     if not desc and gh_data and gh_data.get("description"):
@@ -46,8 +48,17 @@ def build_card(repo_name: str, owner: str, meta: dict, gh_data: dict | None) -> 
         f'          <span class="tech-pill">{t}</span>' for t in tech
     )
 
-    return f"""      <a class="glass project-card" data-cat="{cat}" href="https://github.com/{owner}/{repo_name}" target="_blank">
-        <div class="project-card-top">
+    card_class = "glass project-card featured" if featured else "glass project-card"
+
+    thumbnail_html = ""
+    if thumbnail:
+        thumbnail_html = f"""        <div class="project-card-thumb">
+          <img src="{thumbnail}" loading="lazy" alt="{display} screenshot"/>
+        </div>
+"""
+
+    return f"""      <a class="{card_class}" data-cat="{cat}" href="https://github.com/{owner}/{repo_name}" target="_blank">
+{thumbnail_html}        <div class="project-card-top">
           <span class="project-type {cat}">{CATEGORY_LABELS[cat]}</span>
         </div>
         <div class="project-title">{display}</div>
