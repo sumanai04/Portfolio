@@ -141,11 +141,7 @@ nav {
 }
 
 .hero-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-  width: 100%;
+  max-width: 620px;
 }
 
 .hero-eyebrow {
@@ -826,13 +822,6 @@ footer {
   }
   .nav-toggle {
     display: flex;
-  }
-  .hero-inner {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-  .hero-visual {
-    display: none;
   }
   .projects-grid {
     grid-template-columns: 1fr;
