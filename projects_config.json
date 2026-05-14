@@ -33,7 +33,7 @@
     },
     "Boolean-Retriaval-System": {
       "category": "ds",
-      "display_name": "Boolean Retriaval System",
+      "display_name": "Boolean Retrieval System",
       "description": "An information retrieval system based on boolean operations (AND, OR, NOT) using news articles dataset as the source.",
       "tech": ["Python", "Pandas", "NLTK"]
     },
