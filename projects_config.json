@@ -7,7 +7,7 @@
       "description": "U-Net vs DeepLabV3+ benchmark on 1280x1280 fundus images. Uses a hybrid loss (CE + Dice + Focal), trained on an A100 GPU. Evaluates using AUPR, Dice, and IoU with macro-averaging across lesion classes.",
       "tech": ["Computer Vision", "Python", "PyTorch", "CUDA", "U-Net", "DeepLabV3"],
       "featured": true,
-      "thumbnail": "https://raw.githubusercontent.com/Sumanai04/DR_Segmentation_UNet_DeepLabV3/main/IDRID_Research_Final_Output/legend_qualitative_masks.png"
+      "thumbnail": "https://raw.githubusercontent.com/Sumanai04/DR_Segmentation_UNet_DeepLabV3/main/IDRID_Research_Final_Output/DR U-NET.jpg"
     },
     "HandGestureSystem": {
       "category": "ml",
