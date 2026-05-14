@@ -141,7 +141,7 @@ nav {
 }
 
 .hero-inner {
-  max-width: 860px;
+  max-width: 950px;
   margin: 0 auto;
   text-align: center;
 }
@@ -166,8 +166,7 @@ nav {
 
 .hero-name em {
   font-style: normal;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--text-secondary);
+  color: var(--accent-ml);
 }
 
 .hero-bio {
