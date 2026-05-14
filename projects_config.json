@@ -4,14 +4,14 @@
     "DR_Segmentation_UNet_DeepLabV3": {
       "category": "ml",
       "display_name": "Diabetic Retinopathy Segmentation",
-      "description": "Comparative study of U-Net vs DeepLabV3+ for segmenting Diabetic Retinopathy lesions on fundus images. GPU-accelerated training with PyTorch and CUDA.",
+      "description": "U-Net vs DeepLabV3+ benchmark on 1280x1280 fundus images. Uses a hybrid loss (CE + Dice + Focal), trained on an A100 GPU. Evaluates using AUPR, Dice, and IoU with macro-averaging across lesion classes.",
       "tech": ["Computer Vision", "Python", "PyTorch", "CUDA", "U-Net", "DeepLabV3"]
     },
     "HandGestureSystem": {
       "category": "ml",
       "display_name": "Hand Gesture Recognition for IoT Control",
-      "description": "Real-time hand sign recognition using MobileNetV2 for edge devices. Translates gestures into IoT commands with low latency — optimized for deployment on resource-constrained hardware.",
-      "tech": ["Python", "IoT", "Computer Vision", "MobileNetV2"]
+      "description": "Real-time hand sign recognition pipeline using MobileNetV2 + MediaPipe. Trained on the Creative Senz3D dataset (~1,060 images, 11 gesture types across varying lighting). Classifies gestures into binary on/off commands for IoT device control — optimized for edge hardware.",
+      "tech": ["Python", "TensorFlow", "MediaPipe", "MobileNetV2", "IoT"]
     },
     "StuntingApp": {
       "category": "sw",
@@ -24,6 +24,12 @@
       "display_name": "Receipt-Inator",
       "description": "Split restaurant bills from receipt photos — snap a pic, auto-extract items with DeepSeek Vision + Tesseract OCR, assign to friends, and see who owes what.",
       "tech": ["Next.js", "Typescript", "Tailwind", "React"]
+    },
+    "WebAgenticStarterKit": {
+      "category": "sw",
+      "display_name": "WebAgenticStarterKit",
+      "description": "Dual-agent boilerplate for AI-assisted full-stack development. Routes code generation to DeepSeek V4 and file reading to local Gemma 3 (via Ollama) through a LiteLLM proxy, slashing API costs. Ships with Next.js, FastAPI, and PostgreSQL.",
+      "tech": ["Next.js", "FastAPI", "PostgreSQL", "LiteLLM", "DeepSeek", "Ollama"]
     },
     "MobAppOTP": {
       "category": "sw",

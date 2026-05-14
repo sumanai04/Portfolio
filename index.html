@@ -79,13 +79,16 @@
     <div class="projects-scroll">
     <div class="projects-grid stagger" id="projectGrid">
     <!-- PROJECTS_START -->
-      <a class="glass project-card" data-cat="ml" href="https://github.com/Sumanai04/DR_Segmentation_UNet_DeepLabV3" target="_blank">
+      <a class="glass project-card featured" data-cat="ml" href="https://github.com/Sumanai04/DR_Segmentation_UNet_DeepLabV3" target="_blank">
+        <div class="project-card-thumb">
+          <img src="https://raw.githubusercontent.com/Sumanai04/DR_Segmentation_UNet_DeepLabV3/main/IDRID_Research_Final_Output/legend_qualitative_masks.png" loading="lazy" alt="DR Segmentation results comparison"/>
+        </div>
         <div class="project-card-top">
           <span class="project-type ml">ML / DL</span>
         </div>
         <div class="project-title">Diabetic Retinopathy Segmentation</div>
         <div class="project-desc">
-          Comparative study of U-Net vs DeepLabV3+ for segmenting Diabetic Retinopathy lesions on fundus images. GPU-accelerated training with PyTorch and CUDA.
+          U-Net vs DeepLabV3+ benchmark on 1280x1280 fundus images. Uses a hybrid loss (CE + Dice + Focal), trained on an A100 GPU. Evaluates using AUPR, Dice, and IoU with macro-averaging across lesion classes.
         </div>
         <div class="project-tech">
           <span class="tech-pill">Computer Vision</span>
@@ -105,13 +108,34 @@
         </div>
         <div class="project-title">Hand Gesture Recognition for IoT Control</div>
         <div class="project-desc">
-          Real-time hand sign recognition using MobileNetV2 for edge devices. Translates gestures into IoT commands with low latency — optimized for deployment on resource-constrained hardware.
+          Real-time hand sign recognition pipeline using MobileNetV2 + MediaPipe. Trained on the Creative Senz3D dataset (~1,060 images, 11 gesture types across varying lighting). Classifies gestures into binary on/off commands for IoT device control — optimized for edge hardware.
         </div>
         <div class="project-tech">
           <span class="tech-pill">Python</span>
-          <span class="tech-pill">IoT</span>
-          <span class="tech-pill">Computer Vision</span>
+          <span class="tech-pill">TensorFlow</span>
+          <span class="tech-pill">MediaPipe</span>
           <span class="tech-pill">MobileNetV2</span>
+          <span class="tech-pill">IoT</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link">GitHub ↗</span>
+        </div>
+      </a>
+      <a class="glass project-card featured" data-cat="sw" href="https://github.com/Sumanai04/WebAgenticStarterKit" target="_blank">
+        <div class="project-card-top">
+          <span class="project-type sw">Software Dev</span>
+        </div>
+        <div class="project-title">WebAgenticStarterKit</div>
+        <div class="project-desc">
+          Dual-agent boilerplate for AI-assisted full-stack development. Routes code generation to DeepSeek V4 and file reading to local Gemma 3 (via Ollama) through a LiteLLM proxy, slashing API costs. Ships with Next.js, FastAPI, and PostgreSQL.
+        </div>
+        <div class="project-tech">
+          <span class="tech-pill">Next.js</span>
+          <span class="tech-pill">FastAPI</span>
+          <span class="tech-pill">PostgreSQL</span>
+          <span class="tech-pill">LiteLLM</span>
+          <span class="tech-pill">DeepSeek</span>
+          <span class="tech-pill">Ollama</span>
         </div>
         <div class="project-links">
           <span class="project-link">GitHub ↗</span>
@@ -387,7 +411,7 @@
           Open to collaboration, interesting problems, and nerd discussions.
         </p>
         <div style="margin-top:1.75rem;">
-          <a href="resources/Fathi_CV_AI.pdf" class="btn btn-ghost" download>
+          <a href="resources/Fathi_CV_AI_Latex.pdf" class="btn btn-ghost" download>
             Download CV ↓
           </a>
         </div>
