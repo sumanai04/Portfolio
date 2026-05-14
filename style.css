@@ -400,6 +400,11 @@ nav {
   color: inherit;
 }
 
+.project-card.featured {
+  border-left: 3px solid var(--accent-ml);
+  padding-left: calc(1.75rem - 3px);
+}
+
 .project-card.hidden {
   display: none;
 }

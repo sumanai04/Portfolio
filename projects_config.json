@@ -4,19 +4,19 @@
     "DR_Segmentation_UNet_DeepLabV3": {
       "category": "ml",
       "display_name": "Diabetic Retinopathy Segmentation",
-      "description": "Comparative study on 2 different architectures on segmenting Diabetic Retinopathy's fundus lesion images.",
+      "description": "Comparative study of U-Net vs DeepLabV3+ for segmenting Diabetic Retinopathy lesions on fundus images. GPU-accelerated training with PyTorch and CUDA.",
       "tech": ["Computer Vision", "Python", "PyTorch", "CUDA", "U-Net", "DeepLabV3"]
     },
     "HandGestureSystem": {
       "category": "ml",
       "display_name": "Hand Gesture Recognition for IoT Control",
-      "description": "A Deep Learning-powered system that translates real-time hand signs into actionable commands for IoT devices, utilizing MobileNetV2 for fast and efficient edge processing.",
+      "description": "Real-time hand sign recognition using MobileNetV2 for edge devices. Translates gestures into IoT commands with low latency — optimized for deployment on resource-constrained hardware.",
       "tech": ["Python", "IoT", "Computer Vision", "MobileNetV2"]
     },
     "StuntingApp": {
       "category": "sw",
       "display_name": "StuntingApp",
-      "description": "Web Blogspot based app made for Desa Panyingkiran with the purpose of detecting stunted growth from the most accessible device within your surroundings.",
+      "description": "A web-based stunting detection app built for Desa Panyingkiran, designed to run on low-end devices for maximum accessibility.",
       "tech": ["HTML", "Javascript"]
     },
     "Receipt-Inator": {
@@ -28,38 +28,38 @@
     "MobAppOTP": {
       "category": "sw",
       "display_name": "MobAppOTP",
-      "description": "A mobile app made to test the capabilites of cloud based OTP tokens by using Firebase. The app was made using Flutter and Dart.",
+      "description": "A mobile app testing cloud-based OTP token authentication using Firebase. Built with Flutter and Dart.",
       "tech": ["Flutter", "Dart", "Java", "Firebase"]
     },
     "Boolean-Retriaval-System": {
       "category": "ds",
       "display_name": "Boolean Retrieval System",
-      "description": "An information retrieval system based on boolean operations (AND, OR, NOT) using news articles dataset as the source.",
+      "description": "Information retrieval engine supporting boolean queries (AND, OR, NOT) over a news article corpus. Built with NLTK for text processing and Pandas for inverted index construction.",
       "tech": ["Python", "Pandas", "NLTK"]
     },
     "Genetic-Algorithm-Regression-Model": {
       "category": "ds",
       "display_name": "Genetic Algorithm Regression Model",
-      "description": "A regression model used to analyzed the steam market chart of CS:GO weapon skins. The algorithm could also be repurposed to analyze stock market.",
+      "description": "A regression model analyzing CS:GO weapon skin market trends on Steam. The same genetic algorithm approach also applies to stock market forecasting.",
       "tech": ["Python", "Pandas", "Seaborn", "matplotlib"],
       "owner_override": "louiswids"
     },
     "MultiDiseaseClassification_ML": {
       "category": "ml",
       "display_name": "Disease Classification System",
-      "description": "A machine learning model with the purpose of classifcating multiple diseases based on their factors. It is also a study on which algorithm performs better compared to the others using dataset from kaggle.",
+      "description": "A machine learning model for classifying multiple diseases based on their risk factors. A comparative study of SVM vs Random Forest on a Kaggle medical dataset.",
       "tech": ["Python", "SVM", "RandomForest"]
     },
     "Covid-19-Dasboard-App": {
       "category": "ds",
       "display_name": "Covid 19 Dashboard App",
-      "description": "Made a web based dashboard app to highlight and give data visualizations from the covid 19 pandemic like mortality rate, survivality rate, etc.",
+      "description": "A web dashboard visualizing COVID-19 pandemic data including mortality rates, survival rates, and case trends.",
       "tech": ["Python", "Streamlit", "Seaborn", "matplotlib"]
     },
     "QuizzAppScalable": {
       "category": "sw",
       "display_name": "Redis based Quiz App",
-      "description": "A web based quiz app made to test the scalability feature of Redis database system by emulating user tokens.",
+      "description": "A web quiz app testing Redis scalability by emulating concurrent user sessions with token-based authentication.",
       "tech": ["Python", "Javascript", "CSS", "Redis"]
     }
   }
